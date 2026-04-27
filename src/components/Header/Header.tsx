@@ -3,12 +3,13 @@ import {
   Crown,
   Search,
   ShieldCheck,
-  ShoppingCart,
   Truck,
-  UserCircle2,
 } from 'lucide-react';
 import logo from '../../assets/logo.png';
 import pedidosIcon from '../../assets/pedidos.svg';
+import heartIcon from '../../assets/Heart.svg';
+import perfilIcon from '../../assets/UserCircle.png';
+import carrinhoIcon from '../../assets/ShoppingCart.png';
 import styles from './Header.module.scss';
 
 
@@ -53,14 +54,15 @@ export function Header() {
         </form>
 
         <div className={styles.actions}>
-          <button type="button" aria-label="Pedidos">
-            <img src={pedidosIcon} alt="Meus Pedidos" width={23} height={23} />
+          <button type="button" aria-label="Pedidos" className={styles.pedidosBtn}>
+            <img src={pedidosIcon} alt="Meus Pedidos" className={styles.actionIcon} />
+            <img src={heartIcon} alt="" className={styles.actionIcon} />
           </button>
           <button type="button" aria-label="Perfil">
-            <UserCircle2 size={23} />
+            <img src={perfilIcon} alt="Perfil" className={styles.actionIcon} />
           </button>
           <button type="button" aria-label="Carrinho">
-            <ShoppingCart size={23} />
+            <img src={carrinhoIcon} alt="Carrinho" className={styles.actionIcon} />
           </button>
         </div>
       </div>
