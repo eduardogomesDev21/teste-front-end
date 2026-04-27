@@ -11,6 +11,12 @@ Projeto desenvolvido conforme o desafio: vitrine de produtos com consumo de JSON
 
 ## Como rodar localmente
 
+### Clone o repositório
+
+```bash
+git clone https://github.com/eduardogomesDev21/teste-front-end.git
+```
+
 ### 1) Instalar dependências
 
 ```bash
