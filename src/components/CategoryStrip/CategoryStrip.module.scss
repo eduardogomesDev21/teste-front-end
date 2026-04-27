@@ -1,0 +1,60 @@
+@import '../../styles/variables';
+
+.strip {
+  padding: 28px 20px 0;
+}
+
+.inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(110px, 1fr));
+  gap: 22px;
+}
+
+.item {
+  border: none;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  color: #525252;
+
+  span {
+    width: 128px;
+    height: 128px;
+    border-radius: 12px;
+    background: $color-white;
+    box-shadow: $shadow-soft;
+    display: grid;
+    place-items: center;
+    color: #121212;
+  }
+
+  small {
+    font-size: 16px;
+  }
+}
+
+.active {
+  color: #3019b2;
+  font-weight: 700;
+
+  span {
+    color: #3019b2;
+  }
+}
+
+@media (max-width: 1080px) {
+  .inner {
+    grid-template-columns: repeat(4, minmax(110px, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .inner {
+    grid-template-columns: repeat(2, minmax(110px, 1fr));
+  }
+}

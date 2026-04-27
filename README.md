@@ -1,31 +1,75 @@
-# Teste Econverse: Vaga Desenvolvedor Front-End
+# Teste Econverse - Front-End (React + TypeScript)
 
-### Vem ser #Econverse!
+Projeto desenvolvido conforme o desafio: vitrine de produtos com consumo de JSON, layout em Sass e modal com detalhes do item clicado.
 
-Segue abaixo as instruções para a execução do teste.
+## Tecnologias
 
-## Instruções
-- Faça um fork desse projeto para a sua conta pessoal do GitHub.
-- Desenvolva a página conforme as **Especificações Técnicas** 
-- Crie um README com as instruções para compilar, testar e rodar o projeto.
-- O link do repositório deverá ser enviado para o e-mail julia.gardiano@econverse.com.br com o título **Teste Vaga FrontEnd**
+- React 18
+- TypeScript
+- Vite
+- Sass (SCSS)
 
-## Especificações Técnicas
-- Desenvolver a pagina em React e TypeScript conforme o [layout](https://www.figma.com/file/rWnzPeoxgynuNPsJjV0VmV/Teste-Front-End-Jr?node-id=0%3A1). Para conseguir pegar os elementos do Figma, basta copiar o layout para sua conta que terá acesso de edição.
-- Montar a [vitrine](https://app.econverse.com.br/teste-front-end/junior/tecnologia/layout/vitrine-produtos.png) de produtos consumindo as informações dos produtos em json atraves desse [Link](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json).
-- Desenvolver a interação ao clicar em um produto conforme layout. A interação consiste em abrir um modal com as principais informações do produto presente no arquivo [JSON](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json) conforme o produto que clicar.
-- Utilizar Pré-processador Sass, Less ou Stylus.
-- Respeitar o Layout pixel a pixel, tamanho das fontes, cores e botões.
-- Não Utilizar bibliotecas UI como Bootstrap, Foundation, ou afins.
+## Como rodar localmente
 
-## Pontos Extras
-- Utilizar Boas práticas de SEO
-- Uso de HTML semântico
+### 1) Instalar dependências
 
-## O que avaliaremos em seu teste
-- Organização do projeto
-- Lógica do código
-- Componentização
-- Alcance dos objetivos propostos
+```bash
+npm install
+```
 
-**Boa sorte! ;)**
+### 2) Rodar em desenvolvimento
+
+```bash
+npm run dev
+```
+
+Abra o endereço mostrado no terminal (por padrão, `http://localhost:5173`).
+
+### 3) Gerar build de produção
+
+```bash
+npm run build
+```
+
+### 4) Visualizar build localmente
+
+```bash
+npm run preview
+```
+
+## Funcionalidades implementadas
+
+- Estrutura da página principal inspirada no layout de referência
+- Vitrine de produtos consumindo:
+  `https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json`
+- Componente de card de produto com preço, parcelamento e botão de compra
+- Modal de produto aberto ao clicar no card com:
+  - imagem do produto
+  - nome
+  - preço
+  - seletor de quantidade
+  - botão de compra
+- Estilização com SCSS modular e variáveis globais
+- Estrutura semântica de HTML para melhor SEO
+
+## Estrutura principal
+
+```text
+src/
+  components/
+    Header/
+    Hero/
+    CategoryStrip/
+    ProductSection/
+    ProductCard/
+    ProductModal/
+    PartnerBanners/
+    BrandStrip/
+    Newsletter/
+    Footer/
+  styles/
+  types/
+  utils/
+  App.tsx
+  main.tsx
+```

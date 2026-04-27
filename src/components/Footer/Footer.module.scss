@@ -1,0 +1,87 @@
+@import '../../styles/variables';
+
+.footer {
+  background: #fff;
+  border-top: 1px solid #ececec;
+}
+
+.inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 46px 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 30px;
+
+  h3 {
+    margin: 0 0 16px;
+    font-size: 18px;
+    color: #3f3f40;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    gap: 10px;
+  }
+
+  li a {
+    color: #6f6f6f;
+    font-size: 15px;
+  }
+}
+
+.brand {
+  max-width: 380px;
+  padding-right: 20px;
+  border-right: 1px solid #ececec;
+
+  a {
+    font-size: 42px;
+    font-weight: 800;
+    color: #271c47;
+  }
+
+  span {
+    color: $color-yellow;
+  }
+
+  p {
+    margin: 16px 0;
+    color: #666;
+  }
+
+  div {
+    display: flex;
+    gap: 12px;
+    color: #353535;
+  }
+}
+
+.copy {
+  margin: 0;
+  border-top: 1px solid #ececec;
+  text-align: center;
+  padding: 12px 20px;
+  font-size: 13px;
+  color: #7c7c7c;
+}
+
+@media (max-width: 980px) {
+  .inner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .brand {
+    border-right: none;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .inner {
+    grid-template-columns: 1fr;
+  }
+}
