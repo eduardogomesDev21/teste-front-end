@@ -8,6 +8,7 @@ import {
   Truck,
   UserCircle2,
 } from 'lucide-react';
+import logo from '../../assets/logo.png';
 import styles from './Header.module.scss';
 
 const mainMenu = [
@@ -40,7 +41,7 @@ export function Header() {
 
       <div className={styles.mainBar}>
         <a href="#" aria-label="Econverse" className={styles.logo}>
-          <span>ec</span>onverse
+          <img src={logo} alt="Econverse" className={styles.logoImage} />
         </a>
 
         <form className={styles.search} role="search">
