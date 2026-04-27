@@ -45,5 +45,28 @@
 @media (max-width: 900px) {
   .section {
     grid-template-columns: 1fr;
+    margin-top: 40px;
+    gap: 24px;
+  }
+
+  .card {
+    min-height: 280px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 0 16px;
+    margin-top: 24px;
+    gap: 16px;
+  }
+
+  .card {
+    min-height: 180px;
+    border-radius: 10px;
+  }
+
+  .content {
+    padding: 20px;
   }
 }
