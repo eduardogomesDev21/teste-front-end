@@ -23,10 +23,7 @@ export default function App() {
         setIsLoading(true);
         const data = await getProducts();
         setProducts(data);
-        // Abre o modal automaticamente com o primeiro produto assim que carregar
-        if (data && data.length > 0) {
-          setSelectedProduct(data[0]);
-        }
+        // O modal não é mais aberto automaticamente ao carregar
       } catch (err) {
         console.error(err); // só log, sem quebrar UI
       } finally {
