@@ -1,7 +1,6 @@
 import {
   BadgePercent,
   Crown,
-  Heart,
   Search,
   ShieldCheck,
   ShoppingCart,
@@ -9,7 +8,9 @@ import {
   UserCircle2,
 } from 'lucide-react';
 import logo from '../../assets/logo.png';
+import pedidosIcon from '../../assets/pedidos.svg';
 import styles from './Header.module.scss';
+
 
 const mainMenu = [
   'Todas categorias',
@@ -53,12 +54,9 @@ export function Header() {
 
         <div className={styles.actions}>
           <button type="button" aria-label="Pedidos">
-            <ShoppingCart size={23} />
+            <img src={pedidosIcon} alt="Meus Pedidos" width={23} height={23} />
           </button>
-          <button type="button" aria-label="Favoritos">
-            <Heart size={23} />
-          </button>
-          <button type="button" aria-label="Conta">
+          <button type="button" aria-label="Perfil">
             <UserCircle2 size={23} />
           </button>
           <button type="button" aria-label="Carrinho">
