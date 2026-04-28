@@ -49,7 +49,7 @@ npm run preview
 - Vitrine de produtos consumindo:
   `https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json`
 - Componente de card de produto com preço, parcelamento e botão de compra
-- Modal de produto aberto ao clicar no card com:
+- Modal de produto aberto ao clicar no botão "comprar":
   - imagem do produto
   - nome
   - preço
