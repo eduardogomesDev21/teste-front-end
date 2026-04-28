@@ -83,6 +83,7 @@ src/
 
 <img width="1358" height="641" alt="home_econverse" src="https://github.com/user-attachments/assets/e888d552-7db8-4215-8ccb-8b9d4d0062a1" />
 
-<img width="1353" height="647" alt="popup_econverse" src="https://github.com/user-attachments/assets/d0dea054-cefd-4d1f-96ac-06075a0290b0" />
+<img width="1359" height="642" alt="bluemodal" src="https://github.com/user-attachments/assets/2d439016-fc1c-4675-8c2f-813e35795233" />
+
 
 
