@@ -1,6 +1,6 @@
 # Teste Econverse - Front-End (React + TypeScript)
 
-Projeto desenvolvido conforme o desafio: vitrine de produtos com consumo de JSON, layout em Sass e modal com detalhes do item clicado.
+Aplicação desenvolvida como solução para o teste técnico: vitrine de produtos com consumo de JSON, layout em Sass e modal com detalhes do item clicado.
 
 ## Tecnologias
 
@@ -79,6 +79,11 @@ src/
   App.tsx
   main.tsx
 ```
+
+## Observações
+
+A aplicação consome uma API de produtos. Para garantir o funcionamento mesmo em caso de falha na requisição, foi implementado um fallback com dados locais.
+
 ## Imagens do projeto
 
 <img width="1358" height="641" alt="home_econverse" src="https://github.com/user-attachments/assets/e888d552-7db8-4215-8ccb-8b9d4d0062a1" />
